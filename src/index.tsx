@@ -200,7 +200,7 @@ export default function HijriDatePicker({
                   selected?.hd === d && selected?.hm === display.hm && selected?.hy === display.hy
                     ? 'selected'
                     : ''
-                }`}
+                }`} 
               >
                 {d}
               </button>
