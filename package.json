@@ -1,0 +1,34 @@
+{
+  "name": "@mk01/react-hijri-date-picker",
+  "version": "1.0.0",
+  "description": "A lightweight React Hijri (Islamic) date picker built with pure HTML, CSS, and React.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+       "types": "./dist/index.d.ts",
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs"
+    },
+    "./dist/index.css": "./dist/index.css"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "react",
+    "hijri",
+    "date-picker",
+    "calendar",
+    "islamic",
+    "react-hijri-date-picker",
+    "hijri-date-picker"
+  ],
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "author": "Mk01",
+  "license": "MIT"
+}
