@@ -25,6 +25,11 @@
     "react-hijri-date-picker",
     "hijri-date-picker"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohamed-khaledes/react-hijri-date-picker"
+  },
+  "homepage": "https://github.com/mohamed-khaledes/react-hijri-date-picker",
   "peerDependencies": {
     "react": ">=17",
     "react-dom": ">=17"
