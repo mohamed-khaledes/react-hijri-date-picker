@@ -8,6 +8,7 @@ Easily convert and select dates in the **Hijri (Islamic)** calendar format while
 [![React](https://img.shields.io/badge/react-17%2B-blue.svg)](https://react.dev)
 
 ---
+### DEMO => https://mohamed-khaledes.github.io/react-hijri-date-picker-demo/
 <img width="1076" height="667" alt="Screenshot_102" src="https://github.com/user-attachments/assets/d14b4ebf-d383-4190-952f-0205d2ee559d" />
 
 ## ✨ Features
@@ -196,3 +197,4 @@ export default function App() {
         </div>
   )
 }
+
