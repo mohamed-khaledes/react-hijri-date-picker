@@ -1,6 +1,6 @@
 import * as react_jsx_runtime from 'react/jsx-runtime';
 
-declare function HijriDatePicker({ value, onChange, format, placeholder, locale, optionsStartYear, optionsEndYear, className, containerClassName, inputClassName }: {
+interface HijriDatePickerProps {
     className?: string;
     containerClassName?: string;
     inputClassName?: string;
@@ -11,10 +11,11 @@ declare function HijriDatePicker({ value, onChange, format, placeholder, locale,
     locale?: 'en' | 'ar';
     optionsStartYear?: number;
     optionsEndYear?: number;
-}): react_jsx_runtime.JSX.Element;
+}
+declare function HijriDatePicker({ value, onChange, format, placeholder, locale, optionsStartYear, optionsEndYear, className, containerClassName, inputClassName }: HijriDatePickerProps): react_jsx_runtime.JSX.Element;
 declare function SimpleCalendarIcon({ className, title }: {
     className?: string;
     title?: string;
 }): react_jsx_runtime.JSX.Element;
 
-export { SimpleCalendarIcon, HijriDatePicker as default };
+export { type HijriDatePickerProps, SimpleCalendarIcon, HijriDatePicker as default };

@@ -32,6 +32,18 @@ const HIJRI_MONTHS_AR = [
 const WEEKDAYS_EN = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']
 const WEEKDAYS_AR = ['ح', 'ن', 'ث', 'ر', 'خ', 'ج', 'س']
 
+export interface HijriDatePickerProps {
+  className?:string
+  containerClassName?:string
+  inputClassName?:string
+  value?: string
+  onChange?: (v: string) => void
+  format?: 'YYYY-MM-DD' | 'D MMMM YYYY'
+  placeholder?: string
+  locale?: 'en' | 'ar'
+  optionsStartYear?: number
+  optionsEndYear?: number
+}
 export default function HijriDatePicker({
   value,
   onChange,
@@ -43,18 +55,7 @@ export default function HijriDatePicker({
   className,
   containerClassName,
   inputClassName
-}: {
-  className?:string
-  containerClassName?:string
-  inputClassName?:string
-  value?: string
-  onChange?: (v: string) => void
-  format?: 'YYYY-MM-DD' | 'D MMMM YYYY'
-  placeholder?: string
-  locale?: 'en' | 'ar'
-  optionsStartYear?: number
-  optionsEndYear?: number
-}) {
+}: HijriDatePickerProps) {
   const [open, setOpen] = useState(false)
   const [selected, setSelected] = useState<{ hy: number; hm: number; hd: number } | null>(null)
   const [display, setDisplay] = useState<{ hy: number; hm: number }>({ hy: 1446, hm: 1 })
